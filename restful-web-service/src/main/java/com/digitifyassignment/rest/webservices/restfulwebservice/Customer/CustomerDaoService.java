@@ -2,6 +2,7 @@ package com.digitifyassignment.rest.webservices.restfulwebservice.Customer;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
@@ -61,6 +62,22 @@ public class CustomerDaoService {
 		customers.add(customer);
 		return customer;
 		
+	}
+	
+	//Delete Customer by ID
+	public Customer deleteCustomer(int id) {
+		Iterator<Customer> iterator = customers.iterator();
+		while(iterator.hasNext()) {
+			Customer customer = iterator.next();
+			if(customer.getId() == id) {
+				iterator.remove();
+				return customer;
+			}
+			
+			
+		}
+		
+		return null;
 	}
 	
 	

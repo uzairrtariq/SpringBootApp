@@ -2,12 +2,19 @@ package com.digitifyassignment.rest.webservices.restfulwebservice.Customer;
 
 import java.util.Date;
 
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
+
 public class Customer {
 	
 	private Integer id;
 	
+	//validation for name
+	@Size(min = 2, message = "Name should have at least two characters.")
 	private String name;
 	
+	//Validation for Birthdate
+	@Past
 	private Date birthDate;
 	
 	
