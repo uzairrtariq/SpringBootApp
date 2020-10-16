@@ -24,6 +24,10 @@ Application is tested in Postman and Google Chrome.
 - Run the main Rest Service as Java Application. 
 - Use Postman or browser to load up localhost. 
 - Use http://localhost:8080/v2/api-docs to access the documentation. 
+- The project has Spring Security activated, so you will need the basic authentication to run CRUD.
+- Username: admin 
+  password: digitify
+  (Also mentioned in the screenshots) 
 
 
 # Screenshots:
