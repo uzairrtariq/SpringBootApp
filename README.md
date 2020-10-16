@@ -25,6 +25,11 @@ In order to run the application, you need Eclipse and Tomcat server preinstalled
 - Use http://localhost:8080/v2/api-docs to access the documentation. 
 
 
+Example:
+
+![alt text](https://github.com/uzairrtariq/SpringBootApp/blob/main/Screenshots/CustomerWithOrders.png?raw=true)
+
+
 In case of any queries, email me at TariqUU@Hendrix.edu. Cheers! 
 
 Acknowledgments, 
